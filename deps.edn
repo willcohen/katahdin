@@ -1,0 +1,20 @@
+{:paths ["resources" "src"]
+ :deps {aurelius/aurelius {:git/url "https://github.com/willcohen/aurelius"
+                           :sha "a8b2f4490ac885a382d521b0400376151ef5c89e"}
+        org.clojure/clojure {:mvn/version "1.10.1"}
+        org.clojure/spec.alpha {:mvn/version "0.2.176"}}
+ :aliases
+ {:test {:extra-paths ["test"]
+         :extra-deps {org.clojure/test.check {:mvn/version "0.10.0"}}}
+  :runner
+  {:extra-deps {com.cognitect/test-runner
+                {:git/url "https://github.com/cognitect-labs/test-runner"
+                 :sha "209b64504cb3bd3b99ecfec7937b358a879f55c1"}}
+   :main-opts ["-m" "cognitect.test-runner"
+               "-d" "test"]}
+  :depstar
+  {:extra-deps {seancorfield/depstar {:mvn/version "0.1.5"}}
+   :main-opts ["-m" "hf.depstar.jar" "katahdin.jar"]}
+  :deploy
+  {:extra-deps {deps-deploy {:mvn/version "0.0.9"}}
+   :main-opts ["-m" "deps-deploy.deps-deploy" "deploy" "katahdin.jar"]}}}
