@@ -1,6 +1,7 @@
 # katahdin
 
 [![Clojars Project](https://img.shields.io/clojars/v/katahdin.svg)](https://clojars.org/katahdin)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fwillcohen%2Fkatahdin.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fwillcohen%2Fkatahdin?ref=badge_shield)
 
 ## Usage
 
@@ -23,3 +24,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fwillcohen%2Fkatahdin.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fwillcohen%2Fkatahdin?ref=badge_large)
